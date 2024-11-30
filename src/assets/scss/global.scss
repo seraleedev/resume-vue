@@ -1,12 +1,28 @@
 @font-face {
-  font-family: 'KoddiUDOnGothic-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/KoddiUDOnGothic-Regular.woff')
-    format('woff');
+  font-family: 'SUIT-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2')
+    format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 html,
-* {
-  font-family: 'KoddiUDOnGothic-Regular';
+*,
+*:before,
+*:after {
+  font-family: 'SUIT-Regular', sans-serif;
+  box-sizing: border-box;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  font-size: 10px;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333333; // black
+  overscroll-behavior-y: none;
 }

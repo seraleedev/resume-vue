@@ -87,7 +87,8 @@
       </li>
     </ul>
   </div>
-  <div>가나다라마바사</div>
+  
+  
 </template>
 
 <script>

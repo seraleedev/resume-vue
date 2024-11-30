@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@vue-styled-components/core": "^1.9.0",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
