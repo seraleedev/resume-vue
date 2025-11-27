@@ -24,8 +24,3 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
 })
 </script>
-
-<style lang="scss">
-@import '@/assets/scss/reset.scss';
-@import '@/assets/scss/global.scss';
-</style>
