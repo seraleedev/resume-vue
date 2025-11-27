@@ -1,10 +1,11 @@
 <template>
-  <MainComponent></MainComponent>
+  <HeaderComponent />
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import MainComponent from '@/components/pages/MainComponent.vue'
+import HeaderComponent from '@/components/common/HeaderComponent.vue'
 
 const width = ref(0)
 
