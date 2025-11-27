@@ -5,14 +5,6 @@
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup lang="ts">
 import HelloWorld from '@/components/pages/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-}
 </script>

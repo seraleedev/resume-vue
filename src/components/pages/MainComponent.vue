@@ -16,16 +16,11 @@
   </header>
 </template>
 
-<script>
+<script setup lang="ts">
 // import { theme } from '../common/common';
 
-export default {
-  name: 'MainComponent',
-  methods: {
-    onClickBtn: function () {
-      window.print()
-    },
-  },
+const onClickBtn = () => {
+  window.print()
 }
 </script>
 

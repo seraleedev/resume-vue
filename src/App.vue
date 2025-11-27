@@ -6,26 +6,23 @@
   <router-view />
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      windowSize: 0,
-    }
-  },
-  mounted() {
-    window.addEventListener('resize', this.handleResize)
-  },
-  beforeUnmount() {
-    window.removeEventListener('resize', this.handleResize)
-  },
-  methods: {
-    handleResize() {
-      this.windowSize = window.innerWidth
-      console.log(this.windowSize)
-    },
-  },
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const windowSize = ref(0)
+
+const handleResize = () => {
+  windowSize.value = window.innerWidth
+  console.log(windowSize.value)
 }
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <style lang="scss">

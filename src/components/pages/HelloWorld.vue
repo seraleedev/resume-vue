@@ -27,7 +27,7 @@
         >
       </li>
       <li>
-        <button @click="onClickBtn" >custom</button>
+        <button @click="onClickBtn">custom</button>
       </li>
     </ul>
     <h3>Essential Links</h3>
@@ -87,24 +87,16 @@
       </li>
     </ul>
   </div>
-  
-  
 </template>
 
-<script>
-export default {
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
-  methods: {
-    onClickBtn: function () {
-      window.print(); 
-    }
-  }
-};
+<script setup lang="ts">
+defineProps<{
+  msg: string
+}>()
 
-
+const onClickBtn = () => {
+  window.print()
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

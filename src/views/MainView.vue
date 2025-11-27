@@ -2,30 +2,22 @@
   <MainComponent></MainComponent>
 </template>
 
-<script>
-import MainComponent from '@/components/pages/Main.vue'
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import MainComponent from '@/components/pages/MainComponent.vue'
 
-export default {
-  name: 'MainView',
-  components: {
-    MainComponent,
-  },
-  data() {
-    return {
-      width: 0,
-    }
-  },
-  mounted() {
-    window.addEventListener('resize', this.handleResize)
-  },
-  beforeUnmount() {
-    window.removeEventListener('resize', this.handleResize)
-  },
-  methods: {
-    handleResize() {
-      this.width = window.innerWidth
-      console.log(this.width)
-    },
-  },
+const width = ref(0)
+
+const handleResize = () => {
+  width.value = window.innerWidth
+  console.log(width.value)
 }
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
