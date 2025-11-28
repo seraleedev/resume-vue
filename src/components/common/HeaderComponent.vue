@@ -6,9 +6,13 @@
         <TypographyTag type="h1" className="text-green-01">{{ title[1] }}</TypographyTag>
         <TypographyTag type="h1">{{ title[2] }}</TypographyTag>
       </div>
-      <TypographyTag type="h4" className="whitespace-pre-line font-normal">
-        {{ intro }}
-      </TypographyTag>
+
+      <div class="flex justify-between items-end">
+        <TypographyTag type="h4" className="whitespace-pre-line font-normal">
+          {{ intro }}
+        </TypographyTag>
+        <TypographyTag type="p" class="text-gray-7d">More &gt;</TypographyTag>
+      </div>
     </div>
   </header>
 </template>

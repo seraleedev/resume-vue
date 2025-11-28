@@ -1,11 +1,14 @@
 <template>
   <HeaderComponent />
+  <CareerSection />
+  <FooterComponent />
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import MainComponent from '@/components/pages/MainComponent.vue'
+import FooterComponent from '@/components/common/FooterComponent.vue'
 import HeaderComponent from '@/components/common/HeaderComponent.vue'
+import CareerSection from '@/components/career/pc/CareerSection.vue'
 
 const width = ref(0)
 

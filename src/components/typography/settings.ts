@@ -1,6 +1,6 @@
 export type TypoTypes = Extract<
   keyof HTMLElementTagNameMap,
-  'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'div'
+  'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'div' | 'a'
 >
 
 export interface TypographyProps {
@@ -41,6 +41,9 @@ export const getTypoClasses = (type: TypoTypes, props?: TypographyProps) => {
       break
     case 'p':
       typeClasses = ['text-[1.6rem]', 'leading-[2.4rem]', 'font-normal']
+      break
+    case 'a':
+      typeClasses = ['text-[1.6rem]', 'leading-[2.4rem]', 'no-underline', 'cursor-pointer']
       break
     default:
       typeClasses = []

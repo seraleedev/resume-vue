@@ -1,0 +1,19 @@
+{
+  "tailwindCSS.experimental.classRegex": [
+    ["class[nN]ame\\s*[:=]\\s*[\"'`]([^\"'`]*)[\"'`]", "([^\"'`\\s]+)"],
+    ["class\\s*[:=]\\s*[\"'`]([^\"'`]*)[\"'`]", "([^\"'`\\s]+)"]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript",
+    "vue": "html"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false,
+  "tailwindCSS.emmetCompletions": true
+}
