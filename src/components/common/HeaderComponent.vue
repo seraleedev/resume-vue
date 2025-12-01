@@ -11,7 +11,7 @@
         <TypographyTag type="h4" className="whitespace-pre-line font-normal">
           {{ intro }}
         </TypographyTag>
-        <TypographyTag type="p" class="text-gray-7d">More &gt;</TypographyTag>
+        <DetailButton buttonName="More" />
       </div>
     </div>
   </header>
@@ -20,6 +20,7 @@
 <script setup lang="ts">
 import TypographyTag from '../typography/TypographyTag.vue'
 import { headerData } from '@/data/static'
+import DetailButton from './DetailButton.vue'
 
 const { title, intro } = headerData
 </script>
