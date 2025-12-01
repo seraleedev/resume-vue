@@ -17,12 +17,10 @@
         <TypographyTag type="p">{{ project.title }}</TypographyTag>
       </div>
       <!-- ProjectDetail -->
-      <div
-        class="flex flex-col gap-[4px] justify-start items-start ml-[10px]"
-        v-for="(detail, index) in project.detail"
-        :key="index"
-      >
-        <TypographyTag type="p" class="text-gray-7d">{{ detail }}</TypographyTag>
+      <div class="flex flex-col gap-[4px] justify-start items-start ml-[10px]">
+        <TypographyTag type="p" class="text-gray-7d" v-for="(detail, index) in project.detail" :key="index">{{
+          detail
+        }}</TypographyTag>
       </div>
     </div>
   </div>

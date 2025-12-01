@@ -9,12 +9,12 @@
     <div>
       <!-- ServiceWithRole -->
       <div class="w-full flex justify-between">
-        <TypographyTag type="h3" class="font-medium">{{ role }}</TypographyTag>
+        <TypographyTag type="h3" class="font-semibold">{{ role }}</TypographyTag>
         <!-- ProjectDetail -->
         <DetailButton buttonName="About project" v-if="projectDetail" />
       </div>
 
-      <TypographyTag type="p" class="mt-[10px] font-medium">{{ work }}</TypographyTag>
+      <TypographyTag type="p" class="mt-[10px] font-semibold">{{ work }}</TypographyTag>
       <TypographyTag type="p" class="mt-[15px] mb-[30px] whitespace-pre-line max-w-[760px]" v-if="description">{{
         description
       }}</TypographyTag>
