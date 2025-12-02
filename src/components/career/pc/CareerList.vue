@@ -8,7 +8,7 @@
 
     <div>
       <!-- ServiceWithRole -->
-      <div class="w-full flex justify-between">
+      <div class="w-full flex justify-between items-center">
         <TypographyTag type="h3" class="font-semibold">{{ role }}</TypographyTag>
         <!-- ProjectDetail -->
         <DetailButton buttonName="About project" v-if="projectDetail" />

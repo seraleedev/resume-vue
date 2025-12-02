@@ -1,6 +1,7 @@
 <template>
   <HeaderComponent />
   <CareerSection />
+  <DirectionSection />
   <FooterComponent />
 </template>
 
@@ -9,6 +10,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import FooterComponent from '@/components/common/FooterComponent.vue'
 import HeaderComponent from '@/components/common/HeaderComponent.vue'
 import CareerSection from '@/components/career/pc/CareerSection.vue'
+import DirectionSection from '@/components/career/pc/DirectionSection.vue'
 
 const width = ref(0)
 
