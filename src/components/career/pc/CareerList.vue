@@ -54,5 +54,3 @@ const props = withDefaults(defineProps<ICareerListProps>(), {
 
 const { company, work, history, role, description, techs, projectList, onlyTitle, projectDetail } = props.careerData
 </script>
-
-=

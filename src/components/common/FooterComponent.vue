@@ -24,4 +24,4 @@ import { contactData } from '@/data/static'
 import TypographyTag from '../typography/TypographyTag.vue'
 </script>
 
-<style lang="scss" scoped></style>
+

@@ -9,7 +9,7 @@
     </div>
   </div>
 
-  <div class="mt-[20px] gap-x-[20px] gap-y-[15px] grid w-full grid-cols-2" v-if="!onlyTitle">
+  <div class="mt-[20px] gap-x-[20px] gap-y-[15px] grid w-full grid-cols-2" v-else>
     <div v-for="(project, index) in projectLists" :key="`project-${index}`">
       <!-- ProjectTitle -->
       <div class="flex gap-[5px] justify-start mb-[10px] items-center">
