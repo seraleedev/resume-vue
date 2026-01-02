@@ -11,7 +11,7 @@
         <TypographyTag type="h4" className="whitespace-pre-line font-normal">
           {{ intro }}
         </TypographyTag>
-        <DetailButton buttonName="More" />
+        <DetailButton buttonName="More" @click="openAboutMeModal" />
       </div>
     </div>
   </header>
@@ -19,8 +19,21 @@
 
 <script setup lang="ts">
 import TypographyTag from '../typography/TypographyTag.vue'
+import AboutMeModal from './modal/AboutMeModal.vue'
 import { headerData } from '@/data/static'
 import DetailButton from './DetailButton.vue'
+import { useModal } from '@/composables/useModal'
 
 const { title, intro } = headerData
+
+const { openModal } = useModal()
+
+const openAboutMeModal = () => {
+  openModal({
+    component: AboutMeModal,
+    props: {
+      title: '어떤 사람인가요?',
+    },
+  })
+}
 </script>

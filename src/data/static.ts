@@ -33,17 +33,8 @@ export const careerData: ICareerData[] = [
     role: '웹 프론트엔드',
     description: `'빼기'는 대형폐기물 처리 플랫폼으로 하이브리드 앱 형태로 개발되었으며 고객용 클라이언트 앱과 제휴 파트너용 파트너즈 앱으로 구분됩니다. 입사 후 빼기 서비스 리뉴얼 프로젝트에 참여하여 아토믹 디자인 시스템을 기반으로, 컴포넌트 재사용성을 고려한 개발을 수행했습니다. 
 리뉴얼 완료 후에는 서비스 고도화를 위해 다양한 신규 서비스 기능이 추가되었고, 기존 로직과의 원활한 통합을 위해 구성된 TF팀 내에서 다양한 직군 간 협업을 통해 개발을 담당했습니다.`,
-    techs: [
-      'Next.js',
-      'Typescript',
-      'React',
-      'React-query',
-      'Github',
-      'AWS',
-      'Antd',
-    ],
-    projectDetail:
-      'https://www.notion.so/20a6e88b4c798067a08ec695fe5b45f2?source=copy_link',
+    techs: ['Next.js', 'Typescript', 'React', 'React-query', 'Github', 'AWS', 'Antd'],
+    projectDetail: 'https://www.notion.so/20a6e88b4c798067a08ec695fe5b45f2?source=copy_link',
     projectList: [
       {
         title: '빼기 홈페이지 개발',
@@ -56,27 +47,15 @@ export const careerData: ICareerData[] = [
       },
       {
         title: '빼기 파트너즈 앱 개발',
-        detail: [
-          '파트너즈 앱 리뉴얼 디자인 구현',
-          '앱 내 신규 서비스 개발',
-          '앱 서비스 유지보수',
-        ],
+        detail: ['파트너즈 앱 리뉴얼 디자인 구현', '앱 내 신규 서비스 개발', '앱 서비스 유지보수'],
       },
       {
         title: '빼기 클라이언트 앱 개발',
-        detail: [
-          '클라이언트 앱 리뉴얼 디자인 구현',
-          '앱 내 신규 서비스 개발',
-          '앱 서비스 유지보수',
-        ],
+        detail: ['클라이언트 앱 리뉴얼 디자인 구현', '앱 내 신규 서비스 개발', '앱 서비스 유지보수'],
       },
       {
         title: '빼기 관리자 페이지 개발',
-        detail: [
-          '관리자페이지 사이트 디자인 구현',
-          '관리자페이지 기능 신규 개발',
-          '사이트 유지보수',
-        ],
+        detail: ['관리자페이지 사이트 디자인 구현', '관리자페이지 기능 신규 개발', '사이트 유지보수'],
       },
     ],
   },
@@ -111,11 +90,7 @@ export const careerData: ICareerData[] = [
     projectList: [
       {
         title: 'nPlanet 사이트 구축',
-        detail: [
-          'nPlanet 웹사이트 UI 디자인',
-          '이미지 콘텐츠 제작',
-          '데이터 관리',
-        ],
+        detail: ['nPlanet 웹사이트 UI 디자인', '이미지 콘텐츠 제작', '데이터 관리'],
       },
       {
         title: '바른손랩스 사이트 구축',
@@ -123,19 +98,11 @@ export const careerData: ICareerData[] = [
       },
       {
         title: '모바일 게임 매드햄스 제작',
-        detail: [
-          '게임기획 및 레벨 디자인',
-          '캐릭터 디자인 및 UI 그래픽 구현',
-          '사운드 및 번역',
-        ],
+        detail: ['게임기획 및 레벨 디자인', '캐릭터 디자인 및 UI 그래픽 구현', '사운드 및 번역'],
       },
       {
         title: 'Jolsey 사이트 구축',
-        detail: [
-          'Jolsey 웹사이트 UI 디자인',
-          'Jolsey BI 디자인',
-          '이미지 콘텐츠 제작',
-        ],
+        detail: ['Jolsey 웹사이트 UI 디자인', 'Jolsey BI 디자인', '이미지 콘텐츠 제작'],
       },
       {
         title: '바른손 홈페이지',
@@ -143,10 +110,7 @@ export const careerData: ICareerData[] = [
       },
       {
         title: 'defiVR 서비스 운영',
-        detail: [
-          'defiVR 웹사이트 기획 및 디자인, 제작',
-          '유튜브 채널 콘텐츠 제작',
-        ],
+        detail: ['defiVR 웹사이트 기획 및 디자인, 제작', '유튜브 채널 콘텐츠 제작'],
       },
     ],
   },
@@ -203,8 +167,7 @@ export const contactData = [
 ]
 
 //이력서 pdf
-export const resumeLink =
-  'https://drive.google.com/file/d/1AlsMe0Bdy3SXryPJRHvPVvCWJycobIAO/view?usp=sharing'
+export const resumeLink = 'https://drive.google.com/file/d/1AlsMe0Bdy3SXryPJRHvPVvCWJycobIAO/view?usp=sharing'
 
 //프로젝트 상세기술 데이터타입
 export interface IProjectDetailData {
@@ -224,8 +187,7 @@ export interface IProjectDetailContents {
 // 프로젝트 내용 타이틀
 export const gatdaProjectTitle = {
   title: '주요 프로젝트',
-  subTitle:
-    '모든 프로젝트의 개인 기여도는 작업 구성원을 기준으로 산출되었습니다.',
+  subTitle: '모든 프로젝트의 개인 기여도는 작업 구성원을 기준으로 산출되었습니다.',
 }
 // 프로젝트 내용
 export const gatdaProject: IProjectDetailData[] = [
@@ -303,8 +265,7 @@ export interface AboutMeData {
   title: string
   description: string
 }
-//자기소개 타이틀
-export const aboutMeTitle = { title: '어떤 사람인가요?' }
+
 // 자기소개 내용
 export const aboutMe: AboutMeData[] = [
   {

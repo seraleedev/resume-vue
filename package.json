@@ -17,6 +17,8 @@
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-env": "^7.25.4",
+    "@iconify/json": "^2.2.421",
+    "@iconify/vue": "^5.0.0",
     "@types/node": "^18.19.130",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
@@ -34,6 +36,7 @@
     "sass-loader": "^16.0.2",
     "tailwindcss": "^3.4.18",
     "typescript": "~5.0.0",
+    "unplugin-icons": "^22.5.0",
     "vue-tsc": "^1.8.27"
   },
   "eslintConfig": {

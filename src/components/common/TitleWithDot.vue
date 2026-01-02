@@ -1,5 +1,5 @@
 <template>
-  <div class="my-[32px]">
+  <div :class="$attrs.class || 'my-[32px]'">
     <div class="w-[13px] h-[13px] rounded-xl bg-green-01" />
     <TypographyTag type="h2" class="ml-[13px]">{{ title }}</TypographyTag>
   </div>
@@ -13,4 +13,5 @@ interface Props {
 }
 
 defineProps<Props>()
+defineOptions({ inheritAttrs: false })
 </script>
