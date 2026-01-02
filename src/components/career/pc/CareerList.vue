@@ -11,7 +11,7 @@
       <div class="w-full flex justify-between items-center">
         <TypographyTag type="h3" class="font-semibold">{{ role }}</TypographyTag>
         <!-- ProjectDetail -->
-        <DetailButton buttonName="About project" v-if="projectDetail" />
+        <DetailButton buttonName="About project" v-if="projectDetail" @click="openProjectDetailModal" />
       </div>
 
       <TypographyTag type="p" class="mt-[10px] font-semibold">{{ work }}</TypographyTag>
@@ -42,15 +42,27 @@ import { ICareerData } from '@/data/static'
 import ProjectItems from './ProjectItems.vue'
 import DividerLine from '@/components/common/DividerLine.vue'
 import DetailButton from '@/components/common/DetailButton.vue'
+import { useModal } from '@/composables/useModal'
+import ProjectHistoryModal from '@/components/common/modal/ProjectHistoryModal.vue'
 
 interface ICareerListProps {
   careerData: ICareerData
   showDivder?: boolean
 }
+const { openModal } = useModal()
 
 const props = withDefaults(defineProps<ICareerListProps>(), {
   showDivder: false,
 })
 
 const { company, work, history, role, description, techs, projectList, onlyTitle, projectDetail } = props.careerData
+const openProjectDetailModal = () => {
+  openModal({
+    component: ProjectHistoryModal,
+    props: {
+      title: '주요 프로젝트',
+      subTitle: '모든 프로젝트의 개인 기여도는 작업 구성원을 기준으로 산출되었습니다.',
+    },
+  })
+}
 </script>

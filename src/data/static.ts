@@ -184,11 +184,7 @@ export interface IProjectDetailContents {
   member: string
   tech: string
 }
-// 프로젝트 내용 타이틀
-export const gatdaProjectTitle = {
-  title: '주요 프로젝트',
-  subTitle: '모든 프로젝트의 개인 기여도는 작업 구성원을 기준으로 산출되었습니다.',
-}
+
 // 프로젝트 내용
 export const gatdaProject: IProjectDetailData[] = [
   {

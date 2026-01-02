@@ -25,7 +25,7 @@
                   <Icon icon="bi:arrow-left" width="20" height="20" class="text-green-01" />
                 </DefaultButton>
               </div>
-              <TypographyTag type="h4" class="mt-[10px] text-gray-7d">{{ modalSubTitle }}</TypographyTag>
+              <TypographyTag type="h4" class="mt-[10px] text-gray-7d font-normal">{{ modalSubTitle }}</TypographyTag>
             </div>
             <!--Header -->
 

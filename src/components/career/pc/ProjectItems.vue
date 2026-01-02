@@ -27,13 +27,9 @@
 </template>
 
 <script setup lang="ts">
-import { h } from 'vue'
 import TypographyTag from '@/components/typography/TypographyTag.vue'
+import ListDot from '@/components/common/ListDot.vue'
 import { IProjectData } from '@/data/static'
-
-const ListDot = () => {
-  return h('div', { class: 'w-[5px] h-[5px] bg-green-01 rounded-xl' })
-}
 
 interface IProjectItemsProps {
   projectLists: IProjectData[]
